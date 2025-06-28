@@ -1,5 +1,6 @@
 This is my personal Visual Studio Code configuration. Designed for minimalism, focus, and comfort. 
-🛠️ What's Included 
+
+What's Included 
 
     Editor  
         Font: Brutalist Mono
@@ -46,8 +47,7 @@ This is my personal Visual Studio Code configuration. Designed for minimalism, f
         File watcher excludes for .git, node_modules, etc.
          
      
-
-📁 How to Use 
+How to Use 
 
 Replace or merge this settings.json with your own: 
 
@@ -57,8 +57,7 @@ Replace or merge this settings.json with your own:
     On Windows:
     %APPDATA%\Code\User\settings.json 
      
-
-🧩 Recommended Extensions 
+Recommended Extensions 
 
     Prettier 
     Material Icon Theme 
