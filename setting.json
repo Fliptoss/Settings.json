@@ -2,7 +2,7 @@
   "editor.fontSize": 20,
   "editor.letterSpacing": -1.0,
   "editor.fontFamily": "Brutalist Mono",
-  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontFamily": "Jetbrains Mono",
   "window.zoomLevel": 0.5,
 
@@ -16,7 +16,7 @@
   "terminal.integrated.tabs.enabled": false,
   "terminal.integrated.enableMultiLinePasteWarning": "always",
   "editor.accessibilitySupport": "off",
-  "editor.bracketPairColorization.enabled": false, // this must always be off
+  "editor.bracketPairColorization.enabled": false,
   "editor.codeLens": false,
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
@@ -29,6 +29,8 @@
   "editor.cursorSmoothCaretAnimation": "off",
   "editor.hover.delay": 250,
   "editor.hover.sticky": true,
+  "editor.hover.enabled": false,
+  "editor.occurrencesHighlight": "off",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "off",
@@ -56,6 +58,7 @@
   "workbench.editor.splitSizing": "split",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.untitled.labelFormat": "name",
+  "workbench.editor.enableTabHover": false,
   "workbench.panel.defaultLocation": "bottom",
   "workbench.settings.editor": "json",
   "workbench.settings.enableNaturalLanguageSearch": false,
@@ -69,17 +72,70 @@
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
 
-  "workbench.colorTheme": "Vesper",
+  // FIXED: Made scrollbars thinner and shorter
+  "editor.scrollbar.verticalScrollbarSize": 3,
+  "editor.scrollbar.horizontalScrollbarSize": 3,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+
   "workbench.colorCustomizations": {
-    "tab.activeBorder": "#C94E44",
-    "textLink.foreground": "#C94E44"
-    // "editorBracketHighlight.foreground1": "#141d1d",
-    // "editorIndentGuide.background1": "#16222a7c",
-    // "textLink.activeForeground": "#C1AB85"
+    "terminal.background": "#020202",
+    "terminalCursor.foreground": "#FFFFFF",
+    "editor.background": "#020202",
+    "tab.activeBackground": "#020202",
+    "tab.inactiveBackground": "#020202",
+    "tab.hoverBackground": "#020202",
+    "tab.unfocusedHoverBackground": "#020202",
+    "editorGroupHeader.tabsBackground": "#020202",
+    "tab.border": "#020202",
+    "titleBar.activeBackground": "#020202",
+    "titleBar.inactiveBackground": "#020202",
+    "menuBar.selectionBackground": "#FFFFFF",
+    "menu.background": "#020202",
+    "menu.selectionBackground": "#020202",
+    "menu.foreground": "#FFFFFF",
+    "sideBar.background": "#020202",
+    "editorOverviewRuler.background": "#000000",
+    "editorGutter.background": "#000000",
+    "editorGroupHeader.border": "#000000",
+    "panel.background": "#000000",
+    "panel.border": "#000000",
+    "panelTitle.activeForeground": "#ffffff",
+    "panelTitle.inactiveForeground": "#aaaaaa",
+    "panelTitle.activeBorder": "#000000",
+
+    // FIXED: Made sidebar scrollbar darker but visible, and shorter
+    "scrollbar.shadow": "#000000",
+    "scrollbarSlider.background": "#0c0c0c",
+    "scrollbarSlider.hoverBackground": "#0c0c0c",
+    "scrollbarSlider.activeBackground": "#0c0b0b",
+
+    // FIXED: Made outline/timeline headers black background with less white text
+    "sideBarSectionHeader.background": "#020202",
+    "sideBarSectionHeader.foreground": "#cccccc",
+    "sideBarSectionHeader.border": "#000000",
+
+    // FIXED: Removed hover effects completely
+    "list.activeSelectionBackground": "#1a1a1a",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.hoverBackground": "#141414",
+    "list.focusBackground": "#1a1a1a",
+    "list.inactiveSelectionBackground": "#141414"
   },
+
   "editor.tokenColorCustomizations": {
-    "comments": "#96a2aa"
+    "comments": "#96a2aa",
+    "textMateRules": [
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#D7C9AE"
+        }
+      }
+    ]
   },
+
+  "editor.overviewRulerBorder": false,
 
   "window.density.editorTabHeight": "compact",
   "window.titleBarStyle": "custom",
@@ -129,5 +185,13 @@
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "72EB899E-875F-458A-8519-431BC8F5942F"
+    }
+  ],
+  "mssql.connections": [],
+  "workbench.colorTheme": "Kanagawa Dragon"
 }
