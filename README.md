@@ -1,65 +1,46 @@
-This is my personal Visual Studio Code configuration. Designed for minimalism, focus, and comfort. 
+# Settings.json
 
-What's Included 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    Editor  
-        Font: Brutalist Mono
-        Font size: 20
-        Letter spacing: -1.0
-        No line numbers
-        No minimap
-        Smooth scrolling and clean UI
-         
+In this repository, you will find my custom VS Code `settings.json` file. Feel free to use it if you find it helpful. The design is simple and minimalistic.
 
-    Terminal  
-        Font: JetBrains Mono
-        Font size: 17
-        Block cursor
-        Optimized scrollback and GPU acceleration
-         
+## Key Features and Highlights
 
-    Theme  
-        Color theme: Kanagawa Dragon
-        Custom color overrides for:
-            Editor background
-            Sidebar
-            Scrollbars
-            Tabs
-            Terminal
-             
-         
+- Customized user settings for VS Code
+- Simple and minimalistic design
+- Easy to understand and modify
 
-    UI/UX Tweaks  
-        Hidden status bar
-        Compact tab height
-        No animations
-        Zen mode optimized (hidden bars, single tab)
-         
+## Installation
 
-    Formatting  
-        Auto-format on save using Prettier for HTML, CSS, JS, JSON
-        Python auto-format on type
-         
+1. Download the `settings.json` file from this repository.
+2. Replace your existing `settings.json` file in VS Code with the downloaded file.
+3. Restart VS Code to apply the new settings.
 
-    File Handling  
-        Auto-trim trailing whitespace
-        Final newline inserted automatically
-        File watcher excludes for .git, node_modules, etc.
-         
-     
-How to Use 
+## Usage Examples
 
-Replace or merge this settings.json with your own: 
+```json
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas",
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Default Light+"
+    // Add more custom settings here
+}
+```
 
-    On macOS/Linux:
-    ~/.vscode/settings.json 
+## Dependencies
 
-    On Windows:
-    %APPDATA%\Code\User\settings.json 
-     
-Recommended Extensions 
+This repository has no external dependencies.
 
-    Prettier 
-    Material Icon Theme 
-    Kanagawa Theme 
-     
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/yourfeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/yourfeature`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
